@@ -2,7 +2,9 @@
     <div class="row">
         <div ng-if="userName">
             Welcome {{userName}}!
-            <button class="btn btn-xs btn-danger" ng-click="main.doLogout()">Logout</button>
+            <div ng-if="authenticated">
+                <button class="btn btn-xs btn-danger" ng-click="main.doLogout()">Logout</button>
+            </div>
         </div>
         <div ng-if="!authenticated">
             <button class="btn btn-xs btn-success" ng-click="main.doLogin()">Login</button>

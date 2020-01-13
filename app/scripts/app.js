@@ -5,7 +5,7 @@
  * Time: 7:26 PM
  */
 var myApp = angular.module('myApp', ['LocalStorageModule', 'ngRoute']);
-
+debugger;
 myApp.config(function ($routeProvider) {
   $routeProvider
       .when('/options', {templateUrl: 'options.html', controller: 'OptionsCtrl', controllerAs: 'main', authenticate: false})

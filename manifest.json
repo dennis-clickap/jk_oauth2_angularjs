@@ -1,19 +1,34 @@
 {
-  "name": "OAuth2-Test",
-  "version": "1.0.1",
+  "name": "JK OAuth2-AngularJS",
+  "version": "1.2",
+  "description": "A demonstration of integrating OAuth2 from Moodle in a Google Chrome Extension; After get_Access_token",
+
   "manifest_version": 2,
-  "description": "A demonstration of integrating OAuth2 in a Google Chrome Extension",
-  "homepage_url": "https://github.com/michaeloryl/oauth2-chrome-extension-demo",
+  "homepage_url": "https://www.click-ap.com",
   "browser_action": {
-    "default_title": "OAuth2-Test",
+    "default_title": "JK OAuth2-AngularJS-Test",
     "default_popup": "app/views/main.html"
   },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtpCJ7jJcBEF9xQb2EpQZ7Bj4qRI+EcTOXkwn9mX9sVevcOrFUIwqpuU/nwarPEWcjfS93MXYaFAr2+hc3r/XiDqBa1g1PEQ4pBVFOUsUA5T+gSZAd/2zWSyKSOfdNOeP5ruAKMrgMHCfbzMw16FJTKYYUQWiZvWdxy02hRyUvY+7UMskq6KPaeUMadkbjI4q/2OmO691LI0f/IGgEmtk2Zb7OHdZVcMD8jBarIOMeg9hexcxaXII1/+TIpsovm5PowYxPNJwtJQasnwJP/WYI2RCf2R7qOA/uFM1a25TwMJpb1/jICiElu4pVDW+d51YcwYvuoVXfGZH0qjiR419ywIDAQAB",
   "background": {
     "scripts": [
       "app/scripts/background.js"
     ]
   },
+  "oauth2": {
+    "client_id": "13044057060-vfnppe053mphvn77m2qr7j8sts6jt7j2.apps.googleusercontent.com",
+    "scopes": [ "openid", "profile" ]
+  },
   "permissions": [
-    "identity"
-  ]
+    "https://www.moodle.com.tw/*", 
+    "https://www.googleapis.com/*", 
+    "identity", "storage"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "19": "icons/icon19.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png",
+    "200": "icons/icon200.png"
+ }
 }
